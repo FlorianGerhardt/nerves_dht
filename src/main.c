@@ -45,7 +45,7 @@ int main(int argc, char **argv) {
     if (result != 0) return -1;
 
     result = PHT_READ(sensor, pin, &humidity, &temperature);
-    if (result != 0) fprintf(stderr, "read error\n");
+    //if (result != 0) fprintf(stderr, "read error\n");
 
     printf("%f %f\n", humidity, temperature);
 
